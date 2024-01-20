@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./movie_details.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+
+    <div class="wrapper bg-black overflow-x-hidden ">
+
+        <a href="#" class="absolute w-[70px] h-[20px] ml-[70px] mt-[15px]"> <img src="assets/mv.png" alt=""></a>
+
+        <div class="image-container   h-[700px] w-[1300px] ml-[500px] relative ">
+           <div class="fade-img "> </div>
+           <div class="fade-img-1"></div>
+           <div class="fade-img-2"></div>
+           <img src="assets/17509.jpg" alt="" class="movie-poster" id="movie_poster">
+           
+          
+
+
+        </div>
+
+        <div class="absolute z-10 mt-[-600px] ml-[60px]  overflow-hidden pl-3">
+            <div class="movie-title text-white text-[60px] max-w-[720px] font-bold tracking-wide font-mullish relative ml-[-10x] ">MOVIE NAME </div>
+            <div class="movie-release text-white relative font-semibold font-mullish flex gap-2">
+                <p class="movie-year"></p>
+                <i class="fa-solid fa-circle fa-2xs mt-3" style="color: #8b9098;"></i>
+                <p class="movie-duration"></p>
+                <i class="fa-solid fa-circle fa-2xs mt-3" style="color: #8b9098;"></i>
+                <p class="movie-language"></p>
+            </div>
+
+        <div class="bg-black relative mt-[20px] max-w-[300px] ">
+            <div class="fa fa-star checked icon"></div>
+            <span class="fa fa-star checked icon ml-[4px] "></span>
+            <span class="fa fa-star checked icon ml-[2px] "></span>
+            <span class="fa fa-star checked icon ml-[2px]"></span>
+            <span class="fa fa-star checked icon ml-[2px]"></span>
+
+        </div>
+
+        <div class="genre text-white font-bold  relative font-mullish flex gap-2 mt-[10px]">
+            <p class="genre1"></p>
+            <p class="genre2"></p>
+            <p class="genre3"></p>
+             
+        </div>
+        <div class="movie-description text-gray-300 font-medium relative  font-mullish max-w-[500px] max-h-[200px] overflow-y-scroll mt-[20px]  ">
+        </div>
+
+        <div class="flex text-white movie-language font-medium relative  text-[20px] gap-5 language-bar pt-6 ml-[-10px] mt-[20px]">
+            <button class="language1   px-3 py-1 font-mullish"></button>
+            <button class="language2 font-mullish"></button>
+            <button class="language3 font-mullish"></button>
+
+        </div>
+
+        <div class="service-provider-section flex gap-[30px] mt-[10px] relative">
+
+            <div class="service-provider1 w-[50px] h-[50px] rounded-lg"><img src="" alt="" id="sp1" class="object-cover"></div>
+            <div class="service-provider2  w-[50px] h-[50px] rounded-lg  overflow-hidden"><img src="" alt="" id="sp2"  class="object-contain"></div>
+            <div class="service-provider3  w-[50px] h-[50px] rounded-lg overflow-hidden"><img src="" alt="" id="sp3"  class="object-contain"></div>
+
+
+        </div>
+
+       
+        
+            
+        </div>
+        
+
+        <div class="similar-section bg-black pl-3">
+
+            <p class="text-white font-bold text-3xl ml-[60px] tracking-wider font-mullish mt-[40px]">More Like This</p>
+
+            <div class="flex mt-[40px] gap-8 ml-[60px]  similar-poster-section">
+
+                <div class="w-[200px] h-[250px]  rounded-lg  overflow-hidden object-center card " id="card1">
+                    <div class="movie_id1 hidden">299534</div>
+                    <img src="assets/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg" alt="" id="card1_photo"> 
+                    <div class="cards__overlay">
+                        
+                        
+                    </div>   
+                </div>
+
+                <div class="w-[200px] h-[250px]  rounded-lg overflow-hidden object-center card " id="card2">
+                    <div class="movie_id2 hidden">299534</div>
+                    <img src="assets/desktop-wallpaper-new-movie-posters-hollywood-movie-2022-thumbnail.jpg" alt="" id="card2_photo">
+                 </div>
+                <div class="w-[200px] h-[250px]  rounded-lg  overflow-hidden object-center card" id="card3"> 
+                    <div class="movie_id3 hidden">299534</div>
+                    <img src="assets/medium-endgame3jumbo-avengers-endgame-jumbo-poster-for-room-original-imafgyfvxjzuvkfu.webp" alt="" id="card3_photo">
+                </div>
+                <div class="w-[200px] h-[250px]  rounded-lg overflow-hidden object-center card" id="card4"> 
+                    <div class="movie_id4 hidden">299534</div>
+                    <img src="assets/17509.jpg" alt="" id="card4_photo">
+                </div> 
+
+            </div>
+
+            <div class="similar-title-section ml-[50px] mt-4 pb-10 pl-3">
+                <div class="card1-title text-white text-[16px]  font-medium min-w-[180px] max-w-[200px] text-center font-mullish overflow-hidden  absolute ml-[10px]">His Dark Materials</div>
+                <div class="card2-title text-white text-[16px]  font-medium  min-w-[180px] max-w-[200px] text-center font-mullish overflow-hidden  absolute ml-[250px]">Morbius </div>
+                <div class="card3-title text-white text-[16px]  font-medium  min-w-[180px] max-w-[200px] text-center font-mullish overflow-hidden absolute ml-[480px]">Avengers Endgame</div>
+                <div class="card4-title text-white text-[16px]  font-medium  min-w-[180px] max-w-[200px] text-center font-mullish overflow-hidden  absolute ml-[725px]">Lord Of The Rings</div>
+            </div>
+
+
+        </div>
+
+        <div class="cast-section bg-black pb-[40px] ml-[60px] mt-[50px] pl-3">
+            <h1 class="text-white font-bold text-3xl  tracking-wider font-mullish mb-[40px]">Cast & Characters</h1>
+
+            <div class="cast-grid grid grid-cols-2 grid-rows-4 justify-between gap-[50px] pl-3">
+
+                <div class="grid-card1   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card1 w-[200px] h-[240px] overflow-hidden object-cover cursor-pointer "><img src="assets/download.png" alt="" id="img_card1"></a>
+                    <div class="cast-name-desc1 h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card1-name text-white text-xl font-mullish ">Henry Cavill</p>
+                        <p class="cast-card1-desc text-white text-[16px] font-mullish mt-4">Henry Cavill as Geralt of Rivia, a magically enhanced monster hunter known as a "witcher". Cintran princess Ciri is his "destiny".</p>
+                    </div>
+                    
+                </div>
+                <div class="grid-card2   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card2 w-[200px] h-[240px] overflow-hidden object-cover "><img src="assets/download.png" alt="" id="img_card2"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card2-name text-white text-xl font-mullish ">Anya Chalotra </p>
+                        <p class="cast-card2-desc text-white text-[16px] font-mullish mt-4">Anya Chalotra as Yennefer of Vengerberg, a quarter-elf "sorceress".</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card3   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card3 w-[200px] h-[240px] overflow-hidden object-cover "><img src="assets/download.png" alt="" id="img_card3"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card3-name text-white text-xl font-mullish ">Freya Allan</p>
+                        <p class="cast-card3-desc text-white text-[16px] font-mullish mt-4">Freya Allan as Ciri, Cirilla Fiona Elen Riannon, the crown princess of Cintra, granddaughter of Queen Calanthe and daughter of Pavetta, from whom she inherited the Elder Blood. She is linked to Geralt by destiny.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card4  flex gap-10 ">
+                    <a href="" target="_blank" class="img-card4 w-[200px] h-[240px] overflow-hidden object-center  "><img src="assets/download.png" alt="" id="img_card4"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card4-name text-white text-xl font-mullish ">Eamon Farren </p>
+                        <p class="cast-card4-desc text-white text-[16px] font-mullish mt-4">Eamon Farren as Cahir Mawr Dyffryn aep Ceallach, nicknamed the "Black Knight", a Nilfgaardian army commander who leads the invasion of Cintra and the hunt for Cirilla.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card5   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card5 w-[200px] h-[240px] overflow-hidden object-cover "><img src="" alt=""><img src="assets/download.png" alt="" id="img_card5"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card5-name text-white text-xl font-mullish ">Name</p>
+                        <p class="cast-card5-desc text-white text-[16px] font-mullish mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card6   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card6 w-[200px] h-[240px] overflow-hidden object-cover bg-slate-500"><img src="assets/download.png" alt="" id="img_card6"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card6-name text-white text-xl font-mullish ">Name</p>
+                        <p class="cast-card6-desc text-white text-[16px] font-mullish mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card7   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card7 w-[200px] h-[240px] overflow-hidden object-cover "><img src="assets/download.png" alt="" id="img_card7"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card7-name text-white text-xl font-mullish ">Name</p>
+                        <p class="cast-card7-desc text-white text-[16px] font-mullish mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="grid-card8   flex gap-10 ">
+                    <a href="" target="_blank" class="img-card8 w-[200px] h-[240px] overflow-hidden object-cover "><img src="assets/download.png" alt="" id="img_card8"></a>
+                    <div class="cast-name-desc h-[200px] w-[300px] py-4 " > 
+                        <p class="cast-card8-name text-white text-xl font-mullish ">Name</p>
+                        <p class="cast-card8-desc text-white text-[16px] font-mullish mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="footer-section bg-black pb-[100px] ml-[60px] mt-[100px] relative pl-3">
+
+            <div class="flex gap-[300px]">
+                <p class="text-white font-mullish text-[18px]">Company</p>
+                <p class="text-white font-mullish text-[18px]">View Website in</p>
+                <p class="text-white font-mullish text-[18px]">Need Help</p>
+                <p class="text-white font-mullish text-[18px]">Connect with us</p>
+            </div>
+
+            <div class="flex gap-[310px] mt-[30px]">
+                <p class="text-slate-400 font-mullish text-[16px]">About us</p>
+                <p class="text-slate-400 font-mullish text-[16px] ml-1">English</p>
+                <p class="text-slate-400 font-mullish text-[16px] ml-[70px]">Visit Help Centre</p>
+                <div class="flex gap-[40px] ml-[-40px]">
+                    <img src="Images/facebook-f.svg" width="32px" alt="facebook">
+                    <img src="Images/twitter (1).svg" width="32px">
+
+                </div>
+                
+            </div>
+
+            <div class="flex gap-[310px] mt-[10px]">
+                <p class="text-slate-400 font-mullish text-[16px]">Carrers</p>
+                <p></p>
+                <p class="text-slate-400 font-mullish text-[16px] ml-[140px]">Share Feedback</p>
+
+            </div>
+
+            <div class="mt-[40px] cursor-default flex justify-between max-w-[1300px]">
+                <p class="text-slate-400 font-mullish text-[16px] leading-[28px] ">© 2023 Star. All Rights Reserved. <br> Terms Of Use &nbsp;  Privacy Policy  &nbsp; FAQ</p>
+                <div class="flex gap-0 ">
+                    <div class="w-[150px] "><img src="./Images/google_play_icon.png" alt="" class="scale-105"></div>
+                    <div class="w-[150px] overflow-hidden h-[50px]"><img src="./Images/app_store_icon.png" alt="" class="scale-125"></div>
+                    
+
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+
+       
+       
+        
+    </div>
+
+   
+
+    
+
+    
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/abe7690f90.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
