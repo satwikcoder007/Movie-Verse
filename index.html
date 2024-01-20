@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="relative h-screen w-screen overflow-x-hidden">
+        <!-- image -->
+        <div class="image-container">
+            <img src="./Images/IN-en-20240102-trifectadaily-perspective_alpha_website_small.jpg" alt="">
+            <div class="fade-img"></div>
+            
+            <div class="logo absolute rounded-full top-0 left-[200px]"><img src="./Images/mv.png" width="150px" alt=""></div>
+            <button class=" absolute top-[30px] right-[400px] text-white bg-transparent hover: focus:ring-2 focus:ring-offset-2 focus:ring-white font-medium rounded-lg text-lg px-5 py-2.5">English</button>
+            <button class="absolute box-border bg-red-600 text-white px-[20px] py-[8px] top-[35px] right-[300px] rounded-md group transition ease-in-out duration-500 hover:bg-red-700">Sign In</button>
+            <div class="absolute top-[300px] left-[300px] text-white text-[50px] font-black">Welcome to the ultimate MovieVerse!</div>
+            <div class="absolute top-[370px] left-[380px] text-white text-[28px] font-medium font-mono">Where every click unveils a new cinematic universe</div>
+            
+            <div class="absolute top-[500px] left-[450px] flex items-center justify-center w-[600px]  px-4 py-6 mx-auto bg-transparent sm:px-6 lg:px-8">
+                <div class="relative w-full">
+                  <input  id="search-result" type="text" value="" class="w-full h-10 bg-transparent px-[10px] py-[5px]  bg-clip-padding border border-solid border-gray-400 text-white rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition duration-150 ease-in-out sm:text-[16px] sm:leading-5" placeholder="Search movies">
+                  <button  class="absolute right-0 top-0 mt-3 mr-4 bg-transparent hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white rounded-md text-gray-500 hover:text-white focus:text-white transition duration-150 ease-in-out" onclick="search()">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                  </button>
+                </div>
+            </div>
+            
+            <div class="absolute top-[700px] left-[70px] font-sans text-white text-[24px] font-bold">Top Searches</div>
+              
+        </div>
+        <!-- top searches -->
+        <div class=" relative  bg-black pl-[70px] -mt-[70px] pb-[120px]">
+          <button  class="absolute box-border rounded-full top-[100px] left-[10px] w-[50px] h-[50px] bg-slate-400" type="button" onclick="left_slide()"><i class="fa-solid fa-chevron-left"></i></button>
+          <button  class="absolute box-border rounded-full top-[100px] right-[10px] w-[50px] h-[50px] bg-slate-400" type="button" onclick="right_slide()"><i class="fa-solid fa-chevron-right"></i></button>
+          <div id="slide-0" class="flex gap-[22px] "><h1></h1>
+            <div>
+                <div class="cards h-[250px] w-[200px]">
+                  <img src=""  class="image-item" alt="img" id="image-0" />
+                  <span id="id-0" class="hidden"></span>
+                  <div class="cards__overlay">
+                  <div class="card__title text-white" id="text-name0">Thor Ragnork</div>
+                  <div class="card__runtime text-white">
+                   <span id="date-0"></span>
+                    <span class="card__rating text-white" id="rating-0">8.9</span>
+                  </div>
+                    <div class="card__description text-white" id="description-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+                  </div>rati
+                </div>
+            </div>
+            <div>
+              <div class="cards h-[250px] w-[200px]">
+                <img src=""  class="image-item" alt="img" id="image-1" />
+                <span id="id-1" class="hidden"></span>
+                <div class="cards__overlay">
+                <div class="card__title text-white" id="text-name1">Thor Ragnork</div>
+                <div class="card__runtime text-white" >
+                  <span id="date-1"></span>
+                  <span class="card__rating text-white" id="rating-1">8.9</span>
+                </div>
+                  <div class="card__description text-white" id="description-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+                </div>
+              </div>
+          </div>
+          <div>
+            <div class="cards h-[250px] w-[200px]">
+              <img src=""  class="image-item" alt="img" id="image-2" />
+              <span id="id-2" class="hidden"></span>
+              <div class="cards__overlay">
+              <div class="card__title text-white" id="text-name2">Thor Ragnork</div>
+              <div class="card__runtime text-white" >
+                <span id="date-2"></span>
+                <span class="card__rating text-white" id="rating-2">8.9</span>
+              </div>
+                <div class="card__description text-white" id="description-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div class="cards h-[250px] w-[200px]">
+            <img src=""  class="image-item" alt="img" id="image-3" />
+            <span id="id-3" class="hidden"></span>
+            <div class="cards__overlay">
+            <div class="card__title text-white" id="text-name3">Thor Ragnork</div>
+            <div class="card__runtime text-white" >
+              <span id="date-3"></span>
+              <span class="card__rating text-white" id="rating-3">8.9</span>
+            </div>
+              <div class="card__description text-white" id="description-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="cards h-[250px] w-[200px]">
+          <img src=""  class="image-item" alt="img" id="image-4" />
+          <span id="id-4" class="hidden"></span>
+          <div class="cards__overlay">
+          <div class="card__title text-white" id="text-name4">Thor Ragnork</div>
+          <div class="card__runtime text-white" >
+            <span id="date-4"></span>
+            <span class="card__rating text-white" id="rating-4">8.9</span>
+          </div>
+            <div class="card__description text-white" id="description-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <div class="cards h-[250px] w-[200px]">
+        <img src=""  class="image-item" alt="img" id="image-5" />
+        <span id="id-5" class="hidden"></span>
+        <div class="cards__overlay">
+        <div class="card__title text-white" id="text-name5">Thor Ragnork</div>
+        <div class="card__runtime text-white" >
+          <span id="date-5"></span>
+          <span class="card__rating text-white" id="rating-5">8.9</span>
+        </div>
+          <div class="card__description text-white" id="description-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+        </div>
+      </div>
+    </div>
+          </div>
+          <div id="slide-1" class=" hidden flex gap-[22px]" >
+            <div>
+              <div class="cards h-[250px] w-[200px]">
+                <img src=""  class="image-item" alt="img" id="image-6" />
+                <span id="id-6" class="hidden"></span>
+                <div class="cards__overlay">
+                <div class="card__title text-white" id="text-name6">Thor Ragnork</div>
+                <div class="card__runtime text-white">
+                  <span id="date-6"></span>
+                  <span class="card__rating text-white" id="rating-6">8.9</span>
+                </div>
+                  <div class="card__description text-white" id="description-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+                </div>
+              </div>
+          </div>
+          <div>
+            <div class="cards h-[250px] w-[200px]">
+              <img src=""  class="image-item" alt="img" id="image-7" />
+              <span id="id-7" class="hidden"></span>
+              <div class="cards__overlay">
+              <div class="card__title text-white" id="text-name7">Thor Ragnork</div>
+              <div class="card__runtime text-white" >
+                <span id="date-7"></span>
+                <span class="card__rating text-white" id="rating-7">8.9</span>
+              </div>
+                <div class="card__description text-white" id="description-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div class="cards h-[250px] w-[200px]">
+            <img src=""  class="image-item" alt="img" id="image-8" />
+            <span id="id-8" class="hidden"></span>
+            <div class="cards__overlay">
+            <div class="card__title text-white" id="text-name8">Thor Ragnork</div>
+            <div class="card__runtime text-white">
+              <span id="date-8"></span>
+              <span class="card__rating text-white" id="rating-8">8.9</span>
+            </div>
+              <div class="card__description text-white" id="description-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="cards h-[250px] w-[200px]">
+          <img src=""  class="image-item" alt="img" id="image-9" />
+          <span id="id-9" class="hidden"></span>
+          <div class="cards__overlay">
+          <div class="card__title text-white" id="text-name9">Thor Ragnork</div>
+          <div class="card__runtime text-white" >
+            <span id="date-9"></span>
+            <span class="card__rating text-white" id="rating-9">8.9</span>
+          </div>
+            <div class="card__description text-white" id="description-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <div class="cards h-[250px] w-[200px]">
+        <img src=""  class="image-item" alt="img" id="image-10" />
+        <span id="id-10" class="hidden"></span>
+        <div class="cards__overlay">
+        <div class="card__title text-white" id="text-name10">Thor Ragnork</div>
+        <div class="card__runtime text-white" >
+          <span id="date-10"></span>
+          <span class="card__rating text-white" id="rating-10">8.9</span>
+        </div>
+          <div class="card__description text-white" id="description-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+        </div>
+      </div>
+  </div>
+  <div>
+    <div class="cards h-[250px] w-[200px]">
+      <img src=""  class="image-item" alt="img" id="image-11" />
+      <span id="id-11" class="hidden"></span>
+      <div class="cards__overlay">
+      <div class="card__title text-white" id="text-name11">Thor Ragnork</div>
+      <div class="card__runtime text-white" >
+        <span id="date-11"></span>
+        <span class="card__rating text-white" id="rating-11">8.9</span>
+      </div>
+        <div class="card__description text-white" id="description-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+      </div>
+    </div>
+  </div>
+          </div>
+          <div id="slide-2" class="hidden flex gap-[22px]">
+            <div>
+              <div class="cards h-[250px] w-[200px]">
+                <img src=""  class="image-item" alt="img" id="image-12" />
+                <span id="id-12" class="hidden"></span>
+                <div class="cards__overlay">
+                <div class="card__title text-white" id="text-name12">Thor Ragnork</div>
+                <div class="card__runtime text-white" >
+                  <span id="date-12"></span>
+                  <span class="card__rating text-white" id="rating-12">8.9</span>
+                </div>
+                  <div class="card__description text-white" id="description-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+                </div>
+              </div>
+          </div>
+          <div>
+            <div class="cards h-[250px] w-[200px]">
+              <img src=""  class="image-item" alt="img" id="image-13" />
+              <span id="id-13" class="hidden"></span>
+              <div class="cards__overlay">
+              <div class="card__title text-white" id="text-name13">Thor Ragnork</div>
+              <div class="card__runtime text-white" >
+                <span id="date-13"></span>
+                <span class="card__rating text-white" id="rating-13">8.9</span>
+              </div>
+                <div class="card__description text-white" id="description-13">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+              </div>
+            </div>
+        </div>
+        <div>
+          <div class="cards h-[250px] w-[200px]">
+            <img src=""  class="image-item" alt="img" id="image-14" />
+            <span id="id-14" class="hidden"></span>
+            <div class="cards__overlay">
+            <div class="card__title text-white" id="text-name14">Thor Ragnork</div>
+            <div class="card__runtime text-white" >
+              <span id="date-14"></span>
+              <span class="card__rating text-white" id="rating-14">8.9</span>
+            </div>
+              <div class="card__description text-white" id="description-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+            </div>
+          </div>
+      </div>
+      <div>
+        <div class="cards h-[250px] w-[200px]">
+          <img src=""  class="image-item" alt="img" id="image-15" />
+          <span id="id-15" class="hidden"></span>
+          <div class="cards__overlay">
+          <div class="card__title text-white" id="text-name15">Thor Ragnork</div>
+          <div class="card__runtime text-white" >
+            <span id="date-15"></span>
+            <span class="card__rating text-white" id="rating-15">8.9</span>
+          </div>
+            <div class="card__description text-white" id="description-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+          </div>
+        </div>
+    </div>
+    <div>
+      <div class="cards h-[250px] w-[200px]">
+        <img src=""  class="image-item" alt="img" id="image-16" />
+        <span id="id-16" class="hidden"></span>
+        <div class="cards__overlay">
+        <div class="card__title text-white" id="text-name16">Thor Ragnork</div>
+        <div class="card__runtime text-white" >
+          <span id="date-16"></span>
+          <span class="card__rating text-white" id="rating-16">8.9</span>
+        </div>
+          <div class="card__description text-white" id="description-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+        </div>
+      </div>
+  </div>
+  <div>
+    <div class="cards h-[250px] w-[200px]">
+      <img src=""  class="image-item" alt="img" id="image-17" />
+      <span id="id-17" class="hidden"></span>
+      <div class="cards__overlay">
+      <div class="card__title text-white" id="text-name17">Thor Ragnork</div>
+      <div class="card__runtime text-white" >
+        <span id="date-17"></span>
+        <span class="card__rating text-white" id="rating-17">8.9</span>
+      </div>
+        <div class="card__description text-white" id="description-17">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, beatae fuga doloribus aliquam at, architec</div>
+      </div>
+    </div>
+  </div>
+          </div>
+         
+        </div>
+        <!-- footer -->
+        <div class="footer-section bg-black pb-[100px] pl-[70px] relative">
+
+          <div class="flex gap-[300px]">
+              <p class="text-white font-mullish text-[18px]">Company</p>
+              <p class="text-white font-mullish text-[18px]">View Website in</p>
+              <p class="text-white font-mullish text-[18px]">Need Help</p>
+              <p class="text-white font-mullish text-[18px]">Connect with us</p>
+          </div>
+
+          <div class="flex gap-[310px] mt-[30px]">
+              <p class="text-slate-400 font-mullish text-[16px]">About us</p>
+              <p class="text-slate-400 font-mullish text-[16px] ml-1">English</p>
+              <p class="text-slate-400 font-mullish text-[16px] ml-[70px]">Visit Help Centre</p>
+              <div class="flex gap-[40px] ml-[-40px]">
+                <img src="./Images/facebook.png" width="40px" alt="">
+                <img src="./Images/twitter.png" width="40px" alt="">
+              </div>
+              
+          </div>
+
+          <div class="flex gap-[310px] mt-[10px]">
+              <p class="text-slate-400 font-mullish text-[16px]">Carrers</p>
+              <p></p>
+              <p class="text-slate-400 font-mullish text-[16px] ml-[140px]">Share Feedback</p>
+
+          </div>
+
+          <div class="mt-[40px] cursor-default flex justify-between max-w-[1300px]">
+              <p class="text-slate-400 font-mullish text-[16px] leading-[28px] ">© 2023 Star. All Rights Reserved. <br> Terms Of Use &nbsp;  Privacy Policy  &nbsp; FAQ</p>
+              <div class="flex gap-0 ">
+                  <div class="w-[150px] overflow-hidden h-[47px]"><img src="./Images/google-playstore.webp"  width="150px" height="44px" class="" alt=""></div>
+                  <div class="w-[150px] overflow-hidden h-[50px]"><img src="./Images/ios-appstore.webp" alt="" width="150px" height="44px"></div>
+                  
+
+              </div>
+          </div>
+          
+      </div>
+        
+    </div>
+      
+
+    <script src="searchPage.js"></script>
+    <script src="https://kit.fontawesome.com/abe7690f90.js" crossorigin="anonymous"></script>
+</body>
+</html>

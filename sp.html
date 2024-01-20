@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+    <!-- wrapper -->
+    <div class="relative h-screen w-screen overflow-x-hidden bg-black">
+        <div class="absolute left-[250px] top-[0px]"><img src="./Images/mv.png" height="90px" width="90px" alt=""></div>
+        <!-- nav-bar -->
+        <header class="header-class pr-[200px] h-[85px] ">
+            <div class="logo text-white pt-[50px] pl-[200px]"></div>
+            <ul class="menu transition ease-in duration-700 ">
+                <button class=" group h-[40px] ">
+                    <p class="text-white">Home</p>
+                    <div class="box-border mt-[4px] h-[3px] bg-blue-500 hidden  group-hover:block"></div>
+                </button>
+                <button class=" group h-[40px] ">
+                    <p class="text-white">About</p>
+                    <div class="box-border mt-[4px] h-[3px] bg-blue-500 hidden  group-hover:block"></div>
+                </button>
+                <button class=" group h-[40px] ">
+                    <p class="text-white">Top-Rated</p>
+                    <div class="box-border mt-[4px] h-[3px] bg-blue-500 hidden  group-hover:block"></div>
+                </button>
+                <button class=" group h-[40px] ">
+                    <p class="text-white">Blogs</p>
+                    <div class="box-border mt-[4px] h-[3px] bg-blue-500 hidden  group-hover:block"></div>
+                </button>
+                <button class=" group h-[40px] ">
+                    <p class="text-white">Contacts</p>
+                    <div class="box-border mt-[4px] h-[3px] bg-blue-500 hidden  group-hover:block"></div>
+                </button>
+                
+            </ul>
+            <div class="pt-[50px] cursor-pointer">
+                <button  disabled>
+                    <img src="./Images/icons8-search-50.png" width="30px" alt="">
+                </button>
+            </div>
+        </header>
+        <!-- content -->
+        <div class="ml-[70px] mt-[100px] h-screen w-screen bg-black">
+            <div class="font-mono text-white text-[24px] font-bold flex">
+                <div class="box-border bg-yellow-400 w-[4px] h-[35px] rounded-md"></div>
+                <div><span class="pl-[10px]">Search Result for: </span><span id="searchTitle"></span></div>
+            </div>
+            <div class="relative h-[50px] w-[1200px] mt-[40px]">
+                <input  id="search-result" type="text" value="" class="w-full h-[50px] bg-transparent px-[20px] py-[5px]  bg-clip-padding border-2 border-solid border-yellow-400 text-white rounded-md placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition duration-150 ease-in-out sm:text-[16px] sm:leading-5" placeholder="Search movies">
+                <button  class="absolute right-0 top-0 mt-3 mr-4 bg-transparent hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white rounded-md text-gray-500 hover:text-white focus:text-white transition duration-150 ease-in-out" onclick="search()">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+            <!-- search results -->
+            <div class="relative mt-[20px]  bg-black" id="hero">
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+<script src="searchResult.js"></script>
+</html>
