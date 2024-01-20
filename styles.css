@@ -1,0 +1,97 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+  
+  .movie-description::-webkit-scrollbar {
+    display: none;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.fade-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Adjust the height of the gradient as needed */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0,0,0,1));
+
+}
+
+.fade-img-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to left,rgba(255,255,255,0),rgba(0,0,0,1));
+}
+
+.fade-img-2{
+    position: absolute;
+    left: 780px;
+    
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(to right,rgba(255,255,255,0),rgba(0,0,0,1));
+}
+
+.movie-poster{
+    display: block;
+    width: 70%;
+}
+
+
+.checked {
+    color: gold
+  }
+
+ 
+
+
+ 
+  
+ 
+  
+  .card__title {
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  
+
+  .card {
+    display: inline-block;
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.19rem;
+    cursor:pointer;
+    min-width:200px;
+    height:300px;
+    z-index:0;
+    border: 1px solid rgb(99, 99, 99);
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  .card__img {
+    height: 250px;
+  }
+
+
+

@@ -36,6 +36,7 @@ function renderSearchResults(results)
             yoyo.addEventListener("click",()=>{
               let target=document.getElementById("id-"+i);
               localStorage.movieId=target.textContent;
+              location.href="movieDetails.html"
             })
         }
     }
