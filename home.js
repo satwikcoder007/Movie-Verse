@@ -157,10 +157,6 @@ function fetchtrendingMovies(){
                               ${(movie.overview).slice(0,118)}...
                            </div>
                            <div class="genre"></div>
-                           <div class="buttons">
-                               <button class="btn">CLICK FOR MORE</button>
-                               <button>SUBSCRIBE</button>
-                           </div>
                        </div>
                    </div>
                         `
