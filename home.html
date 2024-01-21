@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./home.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+   <div id="home">
+    <header>
+     
+        <div class="logo"><img src="./Images/mv.png" alt=""></div>
+      <ul class="menu">
+        <li class="nav"><a href="#home"class="tag">Home</a></li>
+        <li class="nav"><a href=""class="tag">About</a>
+        <li class="nav"><a href="#toprated"class="tag">Top-Rated</a></li>
+        <li class="nav"><a href="#upcoming"class="tag">Upcoming</a></li>
+        <li class="nav"><a href=""class="tag">Blogs</a></li>
+        <li class="nav"> <a href="#footer"class="tag">Contacts</a></li>
+      </ul>
+      <div class="search">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" id="search-results">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+        </svg>
+      </div>
+   
+    </header>
+
+  <!-- carousel -->
+  <div class="carousel">
+      <!-- list item -->
+      <div class="list" id="itemactive">
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail" id="thumbnailactive">
+      </div>
+      <!-- next prev -->
+      <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
+  </div>
+   </div>
+    <section>
+      <section id="toprated">
+          <h2 class="genrue">Top-Rated Movies</h2>
+        <div class="container">
+          <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+              chevron_left
+            </button>
+            <ul class="image-list" id="topRatdList">
+             
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <div>
+            <h2 class="genrue">For Kids...</h2>
+          <div class="container" id="animation">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="kids">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section>
+              <h2 class="genrue">Romantic</h2>
+        
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="Romantic">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+            <h2 class="genrue">Family & Drama</h2>
+        <div class="container">
+          <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+              chevron_left
+            </button>
+            <ul class="image-list" id="family">
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+              chevron_right
+            </button>
+          </div>
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section>
+          
+            <h2 class="genrue">Scrience Friction & Fantasy</h2>
+         
+       
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="science">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+       
+            <h2 class="genrue">Comedy Movies</h2>
+           
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="image-list">
+  
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+            <h2 class="genrue">Movies From 2010 Onwards</h2>
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="ancient">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+       
+            <h2 class="genrue">Action & Adventures</h2>
+        
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="action">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="upcoming">
+            <h2 class="genrue">Upcoming Movies</h2>
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="upcomingmovies">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+        
+            <h2 class="genrue">Crime-Alert Movies</h2>
+ 
+        
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="crime">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+            <h2 class="genrue">Thriller Movies</h2>
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="thriller">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+            <h2 class="genrue">Horror Movies</h2>
+         
+          <div class="container">
+            <div class="slider-wrapper">
+              <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+              </button>
+              <ul class="image-list" id="horror">
+              </ul>
+              <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+              </button>
+            </div>
+            <div class="slider-scrollbar">
+              <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer class="footer">
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>View Website in</h3>
+          <select>
+            <option value="english">English</option>
+            <!-- Other language options -->
+          </select>
+        </div>
+        <div class="footer-column">
+          <h3>Need Help?</h3>
+          <ul>
+            <li><a href="#">Visit Help Centre</a></li>
+            <li><a href="#">Share Feedback</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Connect with Us</h3>
+         <div class="ancher">
+          <a href="#"><img src="./Images/facebook.jpg" alt="Facebook" /></a>
+          <a href="#"><img src="./Images/twitter.png" alt="Twitter" /></a>
+         </div>
+        <div class="ancher1">
+          <a href="#"><img src="./Images/google.jpg" alt="Google Play" /></a>
+          <a href="#"><img src="./Images/appstore.jpg" alt="App Store" /></a>
+        </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2023 STAR. All Rights Reserved.</p>
+          <ul>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </footer>
+    <script src="home.js"></script>
+</body>
+</html>
